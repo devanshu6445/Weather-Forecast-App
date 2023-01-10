@@ -1,0 +1,45 @@
+ext {
+    versions = [
+            core            : "1.9.0",
+            appCompat       : "1.5.1",
+            material        : "1.7.0",
+            constraintLayout: "2.1.4",
+            junit           : "4.13.2",
+            espresso        : "3.5.1",
+            androidJunit    : "1.1.5",
+            retrofit        : "2.9.0",
+            hilt            : "2.44",
+            loggingInterceptor: "4.9.3",
+            room:"2.4.3",
+            compileSdk: 33,
+            targetSdk:33
+    ]
+
+    androidx = [
+            core            : "androidx.core:core-ktx:${versions.core}",
+            appCompat       : "androidx.appcompat:appcompat:${versions.appCompat}",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}"
+    ]
+    google = [
+            material: "com.google.android.material:material:${versions.material}"
+    ]
+    testing = [
+            junit       : "junit:junit:${versions.junit}",
+            androidJunit: "androidx.test.ext:junit:${versions.androidJunit}",
+            espresso    : "androidx.test.espresso:espresso-core:${versions.espresso}"
+    ]
+    retrofit = [
+            retrofit2: "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            gson     : "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+            loggingInterceptor : "com.squareup.okhttp3:logging-interceptor:${versions.loggingInterceptor}"
+    ]
+    hilt_dagger = [
+            hilt         : "com.google.dagger:hilt-android:${versions.hilt}",
+            hilt_compiler: "com.google.dagger:hilt-compiler:${versions.hilt}"
+    ]
+    roomDB = [
+            room: "androidx.room:room-runtime:${versions.room}",
+            room_ktx : "androidx.room:room-ktx:${versions.room}",
+            room_compiler:"androidx.room:room-compiler:${versions.room}"
+    ]
+}
